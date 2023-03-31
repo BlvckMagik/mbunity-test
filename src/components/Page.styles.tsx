@@ -1,8 +1,9 @@
-import { Box as MUIBox } from "@mui/material";
-import { styled } from "@mui/system";
+import { Box as MUIBox } from '@mui/material';
+import { styled } from '@mui/system';
 
 export const Layout = styled(MUIBox)(({ theme }) => ({
-  maxWidth: "1170px",
+  minHeight: '100vh',
   backgroundColor: theme.palette.background.default,
-  margin: "auto",
+  display: 'flex',
+  flexDirection: 'column',
 }));

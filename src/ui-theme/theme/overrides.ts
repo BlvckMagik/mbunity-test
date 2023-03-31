@@ -8,9 +8,12 @@ const overrides = {
     styleOverrides: {
       root: {
         textTransform: 'none',
-        fontWeight: 400,
         minWidth: '100px',
-        borderRadius: '80px',
+        borderRadius: '4px',
+        fontWeight: 500,
+        fontSize: '13px',
+        lineHeight: '19px',
+        textAlign: 'center',
 
         '&:hover': {
           backgroundColor: palette.primary.light,
@@ -28,6 +31,7 @@ const overrides = {
     },
     styleOverrides: {
       root: {
+        zIndex: 4,
         width: '278px',
         height: '55px',
         color: palette.secondary.dark,
@@ -36,6 +40,7 @@ const overrides = {
         lineHeight: '20px',
 
         '& .MuiFormLabel-root': {
+          color: palette.secondary.dark,
           fontWeight: 500,
           lineHeight: '20px',
         },
@@ -59,6 +64,28 @@ const overrides = {
       label: {
         '&.Mui-focused': {
           backgroundColor: '#000',
+        },
+      },
+    },
+  },
+
+  MuiRadio: {
+    styleOverrides: {
+      root: {
+        backgroundColor: 'blue',
+      },
+    },
+  },
+
+  MuiFormControlLabel: {
+    styleOverrides: {
+      root: {
+        ' span': {
+          color: palette.primary.main,
+          fontWeight: 400,
+          fontSize: '12px',
+          lineHeight: '20px',
+          marginLeft: '10px',
         },
       },
     },

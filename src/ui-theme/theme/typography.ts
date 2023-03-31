@@ -23,6 +23,7 @@ const typography = {
   // Navigation
 
   h5: {
+    fontFamily: "Roboto, 'Courier New', Courier, monospace",
     fontWeight: 400,
     fontSize: '16px',
     lineHeight: '19px',
